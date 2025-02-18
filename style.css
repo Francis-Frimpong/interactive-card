@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    
+        "img"
+        "forms"
+        
+    ;
+}
+
+.img-box{
+    grid-area: img;
+     
+}
+.img-box  .bg-img{
+    width: 100%;
+    height: inherit;
+
+}
+
+.formfield{
+    grid-area: forms;
+}
+
+
+
+/* Media query */
+
+@media screen and(min-width:1300px){
+   
+    
+}
