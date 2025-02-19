@@ -4,35 +4,38 @@
     box-sizing: border-box;
 }
 
+body{
+    position: relative;
+}
+
 #container{
-    display: grid;
-    grid-template-areas: 
-    
-        "img"
-        "forms"
-        
-    ;
-}
-
-.img-box{
-    grid-area: img;
-     
-}
-.img-box  .bg-img{
-    width: 100%;
-    height: inherit;
-
+    display: flex;
 }
 
 .formfield{
-    grid-area: forms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.formfield form{
+    display: flex;
+    flex-direction: column;
+  ;
 }
 
+.card-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card-back {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
 
-
-/* Media query */
-
-@media screen and(min-width:1300px){
-   
-    
+.bg-img{
+    height: 100vh;
 }
